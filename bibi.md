@@ -6,4 +6,4 @@
 
 ## Steps
 - Combine all ingredients in blender.
-2. Blend. 
+- Blend. 
