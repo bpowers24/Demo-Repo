@@ -3,7 +3,8 @@
 - mango
 - banana
 - juice
+- strawberries
 
 ## Steps
-- Combine all ingredients in blender.
-- Blend. 
+1. Combine all ingredients in blender.
+2. Blend. 
