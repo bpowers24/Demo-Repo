@@ -12,7 +12,7 @@ df <- data.frame(
 )
 
 # make plot
-ggplot(df, aes(x = factor(ID), y = Value, fill = Category)) +
+ggplot(df, aes(x = factor(ID), y = Value, fill = "red")) +
   geom_bar(stat = "identity", position = "dodge") +
   labs(
     title = "Value by ID and Category",
