@@ -1,5 +1,1 @@
-# Smoothie
-## Ingredients
-- banana
-- oat milk
-- cinnamon 
+# Bibi changed stuff
