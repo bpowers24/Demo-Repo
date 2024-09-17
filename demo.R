@@ -6,9 +6,9 @@ library(ggplot2)
 # create fake data
 set.seed(123)
 df <- data.frame(
-  ID = 1:10,
-  Category = rep(c("A", "B"), each = 5),
-  Value = sample(10:100, 10)
+  ID = 1:15,
+  Category = rep(c("A", "B", "C"), each = 5),
+  Value = sample(10:100, 15)
 )
 
 # make plot
