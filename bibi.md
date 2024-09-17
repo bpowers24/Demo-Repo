@@ -1,4 +1,4 @@
-# Smoothies are the worst
+# Smoothie Recipe
 ## Ingredients
 - mango
 - banana
