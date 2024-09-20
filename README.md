@@ -22,11 +22,12 @@ The example dataset includes weight data on 16 animals across 7 zoos. There are 
 - Team A: Vanessa, Maggi, Sophia
 - Team B: Dillman, Lupita
 - Team C: Bibi, Brie
-## Task 1: Clean up repo
+## Tasks
+### Task 1: Clean up repo
 To prepare for this project, everyone should complete the following. 
 - [ ] Delete the `Demo_Repo` from your local computer.
 - [ ] Go to GitHub and (re)clone the `Demo-Repo` onto your computer. 
-## Task 2: Write a script to QAQC the data
+### Task 2: Write a script to QAQC the data
 Team A: write code to add `is_overweight` column
 - [ ] Create a new branch called `qaqc_for_overweight`.
 - [ ] On the new branch, open the `zoo_project.Rproj` file.
@@ -55,7 +56,7 @@ Team A: review `is_threatened` PR
 - [ ] If you agree with them, accept their pull request. 
 - [ ] Delete the branch. Notify Team B and have them delete the branch on their local machines. 
 
-## Task 3: Create `zoo_animals_processed.csv` and plots
+### Task 3: Create `zoo_animals_processed.csv` and plots
 Team C: 
 - [ ] Create a new branch called `create_processed_file`.
 - [ ] On the new branch, open the `zoo_project.Rproj` file. 
@@ -69,57 +70,6 @@ Team C:
 - [ ] Return to GitHub web browser and submit a pull request. 
 - [ ] Bibi will review and accept the pull request. 
 
-## Code Answers
-``` R 
-# QAQC_zoo_animals.R ###########################################################
-
-# Objectives: 
-  # 1. Read in raw data file.
-  # 2. Add a logical (T/F) column called `is_underweight` to indicate if the animal is underweight.
-  # 3. Add a logical (T/F) column called `is_overweight` to indicate if the animal is overweight. 
-  # 4. Add a logical (T/F) column called `is_threatened` to indicate if the animal is threatened (is critically endangered, endangered, or threatened).
-  # 5. Export the new files called `zoo_animals_processed.csv` to the Data/2_processed folder.
-
-### Prep Script ################################################################
-
-# load libraries
-library(tidyverse)
-
-### 1. Read in data ############################################################
-
-zoo_animals_raw <- read_csv("./Data/1_raw/zoo_animals_raw.csv")
-weight_parameters <- read_csv("./Data/0_QAQC/weight_parameters.csv")
-listing_status <- read_csv("./Data/0_QAQC/endangered_status.csv")
-
-### 2. Create `is_underweight` #################################################
-
-zoo_animals_processed <- zoo_animals_raw %>% 
-  left_join(weight_parameters, by = "species") %>% # join the weight df to the raw data
-  mutate(is_underweight = case_when(weight < min_weight ~ TRUE, # if the weight is less than the min weight, write "TRUE"
-                                    TRUE ~ FALSE)) %>% # otherwise write "FALSE"
-  select(colnames(zoo_animals_raw), is_underweight) # select only the original columns plus the new is_underweight col
-
-
-### 3. Create `is_overweight` ##################################################
-
-zoo_animals_processed <- zoo_animals_processed %>% 
-  left_join(weight_parameters, by = "species") %>% 
-  mutate(is_overweight = case_when(weight > max_weight ~ TRUE, 
-                                    TRUE ~ FALSE)) %>% 
-  select(colnames(zoo_animals_processed), is_overweight) 
-
-
-### 4. Create `is_threatened` ##################################################
-# tip: use `iucn_listing_status %in% c("critically endangered", "endangered", "vulnerable")` in your case_when() statement
-
-zoo_animals_processed <- zoo_animals_processed %>% 
-  left_join(listing_status, by = "species") %>% 
-  mutate(is_threatened = case_when(iucn_listing_status %in% c("critically endangered", "endangered", "vulnerable") ~ TRUE, 
-                                   TRUE ~ FALSE)) %>% 
-  select(colnames(zoo_animals_processed), is_threatened)
-
-
-### 5. Export processed data ###################################################
-
-write_csv(zoo_animals_processed, "./Data/2_processed/zoo_animals_processed.csv")
-```
+## Resources
+- For help with GitHub related tasks, see [GitHub_Resources](https://github.com/bpowers24/Demo-Repo/blob/create-zoo-project/GitHub_Resources.md).
+- For coding help, see [project_answer_sheet.md](https://github.com/bpowers24/Demo-Repo/blob/create-zoo-project/project_answer_sheet.md).
