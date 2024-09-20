@@ -1,17 +1,17 @@
 ﻿zoo_name,animal_id,species,weight
 Oregon Zoo,OR-001,Red Kangaroo,50
 Oregon Zoo,OR-002,Giant Panda,120
-Oregon Zoo,OR-003,Rockhopper Penguin,5
+Oregon Zoo,OR-003,Sumatran Orangutan,60
 Woodland Park Zoo,WA-001,Giant Panda,50
-Woodland Park Zoo,WA-002,Rockhopper Penguin,2
+Woodland Park Zoo,WA-002,Sumatran Orangutan,110
 Woodland Park Zoo,WA-003,Orca,4000
 San Diego Zoo,CA-001,Red Kangaroo,60
 San Diego Zoo,CA-002,Lion,200
-Bronx Zoo,NY-001,Lion,160
-Bronx Zoo,NY-002,Tiger,130
+Bronx Zoo,NY-001,Lion,300
+Bronx Zoo,NY-002,Tiger,225
 Smithsonian National Zoo,DC-001,Giant Panda,89
 Smithsonian National Zoo,DC-002,Lion,130
-Denver Zoo,CO-001,Rockhopper Penguin,3
-Denver Zoo,CO-002,Asian Elephant,6500
-Atlanta Zoo,GA-001,Orca,2000
+Denver Zoo,CO-001,Tiger,370
+Denver Zoo,CO-002,Hawksbill Turtle,30
+Atlanta Zoo,GA-001,Hawksbill Turtle,50
 Atlanta Zoo,GA-002,White Rhino,900
