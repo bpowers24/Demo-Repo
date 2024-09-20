@@ -1,7 +1,0 @@
-﻿Zoo_Name,Animal_ID,Species,Weight,Endangered_Status
-Oregon Zoo,OR-001,Kangaroo,50,FALSE
-Oregon Zoo,OR-002,Panda,120,TRUE
-Oregon Zoo,OR-003,Penguin,36,FALSE
-Woodland Park Zoo,WA-001,Panda,90,TRUE
-Woodland Park Zoo,WA-002,Penguin,40,FALSE
-Woodland Park Zoo,WA-003,Orca,4000,TRUE
