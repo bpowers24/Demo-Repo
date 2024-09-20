@@ -4,7 +4,7 @@
   # 1. Read in raw data file.
   # 2. Add a logical (T/F) column called `is_underweight` to indicate if the animal is underweight.
   # 3. Add a logical (T/F) column called `is_overweight` to indicate if the animal is overweight. 
-  # 4. Add a logical (T/F) column called `is_threatened` to indicate if the animal is threatened (is critically endangered, endangered, or threatened).
+  # 4. Add a logical (T/F) column called `is_threatened` to indicate if the animal is threatened (is critically endangered, endangered, or vulnerable).
   # 5. Export the new files called `zoo_animals_processed.csv` to the Data/2_processed folder.
 
 ### Prep Script ################################################################
