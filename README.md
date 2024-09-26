@@ -32,7 +32,7 @@ Team A: write code to add `is_overweight` column
 - [ ] Create a new branch called `qaqc_for_overweight`.
 - [ ] On the new branch, open the `zoo_project.Rproj` file.
 - [ ] Open `QAQA_zoo_animals.R`.
-- [ ] Write code to add a column called `is_overweight`. If the weight of an animal in the `zoo_animals.csv` file is greater than the maximum value in the `weight_parameters.csv` file, then indicate "TRUE". Otherwise indicate "FALSE".
+- [ ] "Write" code to add a column called `is_overweight`. There is a previous commit that has the code you need. Locate the commit history and find the commit "answers here". Copy and paste the code from an older version of `QAQC_zoo_animals.R`. 
 - [ ] When finished, commit your changes. 
 - [ ] Return to GitHub web browser and submit a Pull Request.
 
@@ -46,8 +46,8 @@ Team B: write code to add `is_threatened` column
 - [ ] After the `is_overweight` branch has been merged, create a new branch called `qaqc_for_threatened`.
 - [ ] On the new branch, open the `zoo_project.Rproj` file. 
 - [ ] Open `QAQC_zoo_animals.R`.
-- [ ] Write code to add a column called `is_threatened`. If the endangered listing status of an animal in the `zoo_animals.csv` file is "endangered", "critically endangered", or "vulnerable", then the threatened status should indicated "TRUE". Otherwise indicate "FALSE". 
-- [ ] When finished commit, your changes. 
+- [ ] "Write" code to add a column called `is_threatened`. There is a previous commit that has the code you need. Locate the commit history and find the commit "answers here". Copy and paste the code from an older version of `QAQC_zoo_animals.R`. 
+- [ ] When finished, commit your changes. 
 - [ ] Return to GitHub web browser and submit a Pull Request. 
 
 Team A: review `is_threatened` PR
