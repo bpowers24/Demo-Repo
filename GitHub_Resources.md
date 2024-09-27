@@ -25,3 +25,15 @@ https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/propos
 - Open GitHub Desktop and `Fetch`/`Pull`.
 - Under the branch drop down, select your new branch. 
 - Make changes and pull/commit/push as usual. 
+## How to access and older version of a file
+https://docs.github.com/en/pull-requests/committing-changes-to-your-project/viewing-and-comparing-commits/differences-between-commit-views  
+There are 2 main ways to find your commit history:  
+1. Via file - use this if you are looking for the history from a specific file  
+  - On GitHub web browser, locate the file of interest.
+  - Click the button that has a little timer on it and says `History`. 
+  - Locate the commit you want to look at.
+  - Click the icon second from the right that has a little dog-eared page and <> to view what the file looked like at that point in time.  
+2. Via commits - use this if you are looking for the history from the entire repository  
+  - On GitHub web browser, click the button that has a little timer on it that says `## Commits`.
+  - Locate the commit you want to look at.
+  - You can click the commit message to see the changes that were made in that commit. Or you can click `<>` to view the what the entire repository looked like at that point in time.
