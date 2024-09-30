@@ -37,3 +37,23 @@ There are 2 main ways to find your commit history:
   - On GitHub web browser, click the button that has a little timer on it that says `## Commits`.
   - Locate the commit you want to look at.
   - You can click the commit message to see the changes that were made in that commit. Or you can click `<>` to view the what the entire repository looked like at that point in time.
+## How to submit a pull request
+https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request?tool=webui
+https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/requesting-a-pull-request-review  
+**What is a pull request and why is it called that?** A pull request is a proposal to merge your changes from one branch to another. Rather than you "pushing" changes from your branch to another branch (usually main), you are asking (requesting) that main "pull" changes from your branch into main. This nuance emphasizes that it is the repository maintainer's responsibility to decide whether or not to integrate the changes - hence the reason you are "requesting".
+- On GitHub web browser, go to the `Pull requests` tab.
+- Click on the green `New pull request` button.
+- In the grey banner, there are 2 drop downs. For `base:`, select where you want your files to merge into (usually "main"). In `compare:`, select the branch that has your changes that you want to merge. 
+- Click "Create pull request".
+## How to review and accept a pull request
+https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/reviewing-changes-in-pull-requests/reviewing-proposed-changes-in-a-pull-request  
+https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/incorporating-changes-from-a-pull-request/merging-a-pull-request  
+- On GitHub web browser, go to the `Pull requests` tab.
+- In the list of open pull requests, click on the one you want to review. 
+- Review the code by looking at the `Files changed` tab. 
+- If everything looks good, you can proceed with merging the pull request. 
+	- Note that if you would like to leave comments or suggest additional changes, we can discuss how to do this using GitHub's tools at a future date. For the time being, if you have comments or revisions, notify the person who submitted the pull request over Teams chat. 
+- Return to the `Conservation` tab and click the green `Merge pull request` button. If you don't see this button, it is likely because there are merge conflicts that still need to be resolved. After you resolve those conflicts, you should be able to return here and merge the pull request. 
+- GitHub will ask you to confirm the merge. You can add a short message to describe what's being merged. Click the `Confirm merge` button. 
+- If the branch is no longer needed, you can delete the branch associated with the pull request. GitHub will often show a button to `Delete branch`. 
+- After you delete the branch, notify everyone on the team. Everyone (including you) should return to GitHub Desktop and delete the branch. 
