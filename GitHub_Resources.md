@@ -38,7 +38,7 @@ There are 2 main ways to find your commit history:
   - Locate the commit you want to look at.
   - You can click the commit message to see the changes that were made in that commit. Or you can click `<>` to view the what the entire repository looked like at that point in time.
 ## How to submit a pull request
-https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request?tool=webui
+https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request?tool=webui  
 https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/requesting-a-pull-request-review  
 **What is a pull request and why is it called that?** A pull request is a proposal to merge your changes from one branch to another. Rather than you "pushing" changes from your branch to another branch (usually main), you are asking (requesting) that main "pull" changes from your branch into main. This nuance emphasizes that it is the repository maintainer's responsibility to decide whether or not to integrate the changes - hence the reason you are "requesting".
 - On GitHub web browser, go to the `Pull requests` tab.
