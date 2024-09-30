@@ -10,10 +10,9 @@
 # load libraries
 library(tidyverse)
 
-### Read in data ###############################################################
+### Source in data ###############################################################
 
-zoo_animals_processed <- read_csv("./Data/2_processed/zoo_animals_processed.csv")
-weight_parameters <- read_csv("./Data/0_QAQC/weight_parameters.csv")
+source("./Scripts/QAQC_zoo_animals.R")
 
 ### Plot A #####################################################################
 # checking if threatened species were correctly identified: 
