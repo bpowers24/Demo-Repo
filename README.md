@@ -31,7 +31,7 @@ To prepare for this project, everyone should complete the following.
 Team A: write code to add `is_overweight` column
 - [ ] Create a new branch called `qaqc_for_overweight`.
 - [ ] On the new branch, open the `zoo_project.Rproj` file.
-- [ ] Open `QAQA_zoo_animals.R`.
+- [ ] Open `QAQC_zoo_animals.R`.
 - [ ] "Write" code to add a column called `is_overweight`. There is a previous commit that has the code you need. Locate the commit history and find the commit "answers here". Copy and paste the code from an older version of `QAQC_zoo_animals.R`. 
 - [ ] When finished, commit your changes. 
 - [ ] Return to GitHub web browser and submit a Pull Request.
