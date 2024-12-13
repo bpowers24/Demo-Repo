@@ -30,6 +30,7 @@ To prepare for this project, everyone should complete the following.
 - [ ] Go to GitHub and (re)clone the `Demo-Repo` onto your computer. 
 ### Task 2: Write a script to QAQC the data
 Team A: write code to add `is_overweight` column
+- [ ] Pull/fetch recent changes in GitHub desktop. 
 - [ ] Create a new branch called `qaqc_for_overweight`.
 - [ ] On the new branch, open the `zoo_project.Rproj` file.
 - [ ] Open `QAQC_zoo_animals.R`.
@@ -44,6 +45,7 @@ Team B: review `is_overweight` PR
 - [ ] Delete the branch. Notify Team A and have them delete the branch on their local machines. 
 
 Team B: write code to add `is_threatened` column
+- [ ] Pull/fetch recent changes in GitHub desktop. 
 - [ ] After the `is_overweight` branch has been merged, create a new branch called `qaqc_for_threatened`.
 - [ ] On the new branch, open the `zoo_project.Rproj` file. 
 - [ ] Open `QAQC_zoo_animals.R`.
@@ -62,7 +64,7 @@ Team A: review `is_threatened` PR
 2. Of the threatened species, how many of those individuals are outside of their normal weight? 
 
 Everyone should complete the following:  
-- [ ] Pull/fetch the latest changes
+- [ ] Pull/fetch recent changes in GitHub desktop. 
 - [ ] On the main branch, open the `zoo_project.Rproj` file. 
 - [ ] Open `QAQC_zoo_animals.R`.
 - [ ] Run the entire script. 
