@@ -23,6 +23,7 @@ The example dataset includes weight data on 16 animals across 7 zoos. There are 
 - Team B: Dillman, Lupita, Jake
 
 ## Tasks
+A copy of the tasks are provided in this readme for general reference. Please refer to the [GitHub Issues](https://github.com/bpowers24/Demo-Repo/issues) tab for more specifics during the workshop.  
 ### Task 1: Clean up repo
 To prepare for this project, everyone should complete the following. 
 - [ ] Delete the `Demo_Repo` from your local computer.
