@@ -23,7 +23,7 @@ The example dataset includes weight data on 16 animals across 7 zoos. There are 
 - Team B: Dillman, Lupita, Jake
 
 ## Tasks
-A copy of the tasks are provided in this readme for general reference. Please refer to the [GitHub Issues](https://github.com/bpowers24/Demo-Repo/issues) tab for more specifics during the workshop.  
+A copy of the tasks are provided in this readme for general reference. Please refer to the [GitHub Issues](https://github.com/bpowers24/Demo-Repo/issues) tab for more specifics during the workshop. For each task, read the bulleted item in its entirety, then refer to the [GitHub_Resources](https://github.com/bpowers24/Demo-Repo/blob/create-zoo-project/GitHub_Resources.md) before starting. 
 ### Task 1: Clean up repo
 To prepare for this project, everyone should complete the following. 
 - [ ] Delete the `Demo_Repo` from your local computer.
@@ -32,32 +32,36 @@ To prepare for this project, everyone should complete the following.
 Team A: write code to add `is_overweight` column
 - [ ] Pull/fetch recent changes in GitHub desktop. 
 - [ ] Create a new branch called `qaqc_for_overweight`.
-- [ ] On the new branch, open the `zoo_project.Rproj` file.
+- [ ] On the new branch, open the `Demo-Repo.Rproj` file.
 - [ ] Open `QAQC_zoo_animals.R`.
-- [ ] "Write" code to add a column called `is_overweight`. There is a previous commit that has the code you need. Locate the commit history and find the commit "answers here". Copy and paste the code from an older version of `QAQC_zoo_animals.R`. 
-- [ ] When finished, commit your changes. 
-- [ ] Return to GitHub web browser and submit a Pull Request.
+- [ ] Starting at the top of the script, run each line of code until you get to the `3. Create is_overweight` chunk. 
+- [ ] "Write" code to add a column called `is_overweight`. There is a previous commit that has the code you need. Locate the commit history and find the commit "answers here". Copy and paste the code from an older version of `QAQC_zoo_animals.R`.
+- [ ] Run the line of code you added to create `zoo_animals_processed`. Then run the `test_that()` line below it to verify your work. Do not run any more code. 
+- [ ] When finished save your work, commit and push your changes. 
+- [ ] Return to GitHub web browser and submit a Pull Request, but DO NOT merge it. 
 
 Team B: review `is_overweight` PR
 - [ ] Open the pull request in GitHub web browser.
 - [ ] Look through the changes they proposed. 
 - [ ] If you agree with them, accept their pull request. 
-- [ ] Delete the branch. Notify Team A and have them delete the branch on their local machines. 
+- [ ] Delete the branch. Notify Team A and have them delete the branch on their local machines. On GitHub desktop, fetch once (do not click "publish"). Delete the branch. Then fetch again. 
 
 Team B: write code to add `is_threatened` column
 - [ ] Pull/fetch recent changes in GitHub desktop. 
 - [ ] After the `is_overweight` branch has been merged, create a new branch called `qaqc_for_threatened`.
-- [ ] On the new branch, open the `zoo_project.Rproj` file. 
+- [ ] On the new branch, open the `Demo-Repo.Rproj` file. 
 - [ ] Open `QAQC_zoo_animals.R`.
-- [ ] "Write" code to add a column called `is_threatened`. There is a previous commit that has the code you need. Locate the commit history and find the commit "answers here". Copy and paste the code from an older version of `QAQC_zoo_animals.R`. 
-- [ ] When finished, commit your changes. 
-- [ ] Return to GitHub web browser and submit a Pull Request. 
+- [ ] Starting at the top of the script, run each line of code until you get to the `4. Create is_threatened` chunk. 
+- [ ] "Write" code to add a column called `is_threatened`. There is a previous commit that has the code you need. Locate the commit history and find the commit "answers here". Copy and paste the code from an older version of `QAQC_zoo_animals.R`.
+- [ ] Run the line of code you added to create `zoo_animals_processed`. Then run the `test_that()` line below it to verify your work. Do not run any more code. 
+- [ ] When finished save your work, commit and push your changes. 
+- [ ] Return to GitHub web browser and submit a Pull Request, but DO NOT merge it.  
 
 Team A: review `is_threatened` PR
 - [ ] Open the pull request in GitHub web browser.
 - [ ] Look through the changes they proposed. 
 - [ ] If you agree with them, accept their pull request. 
-- [ ] Delete the branch. Notify Team B and have them delete the branch on their local machines. 
+- [ ] Delete the branch. Notify Team B and have them delete the branch on their local machines. On GitHub desktop, fetch once (do not click "publish"). Delete the branch. Then fetch again. 
 
 ### Task 3: Plot results and answer our objectives
 1. Which zoos have a threatened species? 
@@ -65,11 +69,10 @@ Team A: review `is_threatened` PR
 
 Everyone should complete the following:  
 - [ ] Pull/fetch recent changes in GitHub desktop. 
-- [ ] On the main branch, open the `zoo_project.Rproj` file. 
+- [ ] On the main branch, open the `Demo-Repo.Rproj` file. 
 - [ ] Open `QAQC_zoo_animals.R`.
 - [ ] Run the entire script. 
 - [ ] Use the plots to answer the questions. 
-- [ ] Return to this GitHub issue and post your answers as a comment. 
 
 ## Resources
 - For help with GitHub related tasks, see [GitHub_Resources](https://github.com/bpowers24/Demo-Repo/blob/create-zoo-project/GitHub_Resources.md).
