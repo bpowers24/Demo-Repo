@@ -20,8 +20,8 @@ The example dataset includes weight data on 16 animals across 7 zoos. There are 
 	- `max_weight`: {numeric} The average maximum weight of the animal in kilograms. 
 ## Teams
 - Team A: Vanessa, Maggi, Sophia
-- Team B: Dillman, Lupita
-- Team C: Bibi, Brie
+- Team B: Dillman, Lupita, Jake
+
 ## Tasks
 ### Task 1: Clean up repo
 To prepare for this project, everyone should complete the following. 
@@ -56,19 +56,17 @@ Team A: review `is_threatened` PR
 - [ ] If you agree with them, accept their pull request. 
 - [ ] Delete the branch. Notify Team B and have them delete the branch on their local machines. 
 
-### Task 3: Create `zoo_animals_processed.csv` and plots
-Team C: 
-- [ ] Create a new branch called `create_processed_file`.
-- [ ] On the new branch, open the `zoo_project.Rproj` file. 
-- [ ] Open the `QAQC_zoo_aniamls.R` file and run the script, including writing out the new `zoo_animals_processed.csv` file. 
-- [ ] Open `plots_zoo_animals.R` script and run it. 
-- [ ] Compare plots to the answer plots in the Figures folder. 
-	- [ ] If the figures look good, then commit your changes. 
-	- [ ] If there is an issue, then submit an issue and assign Bibi to it. 
-		- [ ] Bibi will go to that branch and make any changes needed to fix the code. Commit and push. 
-		- [ ] Brie will pull and try to run the scripts again. If figures look good, then will commit changes. 
-- [ ] Return to GitHub web browser and submit a pull request. 
-- [ ] Bibi will review and accept the pull request. 
+### Task 3: Plot results and answer our objectives
+1. Which zoos have a threatened species? 
+2. Of the threatened species, how many of those individuals are outside of their normal weight? 
+
+Everyone should complete the following:  
+- [ ] Pull/fetch the latest changes
+- [ ] On the main branch, open the `zoo_project.Rproj` file. 
+- [ ] Open `QAQC_zoo_animals.R`.
+- [ ] Run the entire script. 
+- [ ] Use the plots to answer the questions. 
+- [ ] Return to this GitHub issue and post your answers as a comment. 
 
 ## Resources
 - For help with GitHub related tasks, see [GitHub_Resources](https://github.com/bpowers24/Demo-Repo/blob/create-zoo-project/GitHub_Resources.md).
