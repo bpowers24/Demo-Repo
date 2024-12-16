@@ -23,7 +23,7 @@ The example dataset includes weight data on 16 animals across 7 zoos. There are 
 - Team B: Dillman, Lupita, Jake
 
 ## Tasks
-A copy of the tasks are provided in this readme for general reference. Please refer to the [GitHub Issues](https://github.com/bpowers24/Demo-Repo/issues) tab for more specifics during the workshop. For each task, read the bulleted item in its entirety, then refer to the [GitHub_Resources](https://github.com/bpowers24/Demo-Repo/blob/create-zoo-project/GitHub_Resources.md) before starting. 
+A copy of the tasks are provided in this readme for general reference. Please refer to the [GitHub Issues](https://github.com/bpowers24/Demo-Repo/issues) tab for more specifics during the workshop. For each task, read the bulleted item in its entirety, then refer to the [GitHub_Resources](https://github.com/bpowers24/Demo-Repo/blob/main/GitHub_Resources.md) before starting. 
 ### Task 1: Clean up repo
 To prepare for this project, everyone should complete the following. 
 - [ ] Delete the `Demo_Repo` from your local computer.
@@ -75,5 +75,5 @@ Everyone should complete the following:
 - [ ] Use the plots to answer the questions. 
 
 ## Resources
-- For help with GitHub related tasks, see [GitHub_Resources](https://github.com/bpowers24/Demo-Repo/blob/create-zoo-project/GitHub_Resources.md).
-- For coding help, see [project_answer_sheet.md](https://github.com/bpowers24/Demo-Repo/blob/create-zoo-project/project_answer_sheet.md).
+- For help with GitHub related tasks, see [GitHub_Resources](https://github.com/bpowers24/Demo-Repo/blob/main/GitHub_Resources.md).
+- For coding help, see [project_answer_sheet.md](https://github.com/bpowers24/Demo-Repo/blob/main/project_answer_sheet.md).
