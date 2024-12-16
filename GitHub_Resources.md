@@ -1,5 +1,11 @@
 
 # GitHub Resources
+## How to remove a repository from your local computer
+This removes the cloned copy of your repository on your local computer. The original repository will still remain on GitHub. 
+- Locate your repository in your Finder/File Explorer.
+- If there is a `.gitignore` file, open it. This file lists files that may be on your local computer and not saved elsewhere. If you find files listed in the `.gitignore` that you want to keep, move them somewhere else on your computer.
+- Highlight and delete the parent folder. This will remove the repository folder and all files within it.
+- To reclone return to GitHub web broswer and clone as if the repo was new. 
 ## How to clone
 https://docs.github.com/en/desktop/adding-and-cloning-repositories/cloning-a-repository-from-github-to-github-desktop
 - Go to your repo on GitHub web browser.
