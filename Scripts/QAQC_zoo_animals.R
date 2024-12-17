@@ -41,7 +41,10 @@ test_that("Data frames are equal", {
 
 # write your code here
 zoo_animals_processed <- zoo_animals_processed %>% 
-
+  left_join(weight_parameters, by = "species") %>% 
+  mutate(is_overweight = case_when(weight > max_weight ~ TRUE, 
+                                   TRUE ~ FALSE)) %>% 
+  select(colnames(zoo_animals_processed), is_overweight)
 
 
 # run this code to check your answer
