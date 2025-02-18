@@ -31,7 +31,7 @@ https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/propos
 - Open GitHub Desktop and `Fetch`/`Pull`.
 - Under the branch drop down, select your new branch. 
 - Make changes and pull/commit/push as usual. 
-## How to access and older version of a file
+## How to access an older version of a file
 https://docs.github.com/en/pull-requests/committing-changes-to-your-project/viewing-and-comparing-commits/differences-between-commit-views  
 There are 2 main ways to find your commit history:  
 1. Via file - use this if you are looking for the history from a specific file  
@@ -59,7 +59,7 @@ https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/incorp
 - Review the code by looking at the `Files changed` tab. 
 - If everything looks good, you can proceed with merging the pull request. 
 	- Note that if you would like to leave comments or suggest additional changes, we can discuss how to do this using GitHub's tools at a future date. For the time being, if you have comments or revisions, notify the person who submitted the pull request over Teams chat. 
-- Return to the `Conservation` tab and click the green `Merge pull request` button. If you don't see this button, it is likely because there are merge conflicts that still need to be resolved. After you resolve those conflicts, you should be able to return here and merge the pull request. 
+- Return to the `Conversation` tab and click the green `Merge pull request` button. If you don't see this button, it is likely because there are merge conflicts that still need to be resolved. After you resolve those conflicts, you should be able to return here and merge the pull request. 
 - GitHub will ask you to confirm the merge. You can add a short message to describe what's being merged. Click the `Confirm merge` button. 
 - If the branch is no longer needed, you can delete the branch associated with the pull request. GitHub will often show a button to `Delete branch`. 
 - After you delete the branch, notify everyone on the team. Everyone (including you) should return to GitHub Desktop and delete the branch. 
