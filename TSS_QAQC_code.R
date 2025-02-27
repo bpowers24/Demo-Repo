@@ -135,4 +135,4 @@ final$Method_Deviation = gsub("NA; ","",final$Method_Deviation)
 
 
 # ===== Export data =====
-write.csv(final, paste0(processed.path,run.date,"_Data_Processed_TSS_",rc.study.code.samples,".csv"), row.names = FALSE)
+write_csv(final, paste0(processed.path,run.date,"_Data_Processed_TSS_",rc.study.code.samples,".csv"), row.names = FALSE)
