@@ -49,7 +49,8 @@ https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/propos
 **What is a pull request and why is it called that?** A pull request is a proposal to merge your changes from one branch to another. Rather than you "pushing" changes from your branch to another branch (usually main), you are asking (requesting) that main "pull" changes from your branch into main. This nuance emphasizes that it is the repository maintainer's responsibility to decide whether or not to integrate the changes - hence the reason you are "requesting".
 - On GitHub web browser, go to the `Pull requests` tab.
 - Click on the green `New pull request` button.
-- In the grey banner, there are 2 drop downs. For `base:`, select where you want your files to merge into (usually "main"). In `compare:`, select the branch that has your changes that you want to merge. 
+- In the grey banner, there are 2 drop downs. For `base:`, select where you want your files to merge into (usually "main"). In `compare:`, select the branch that has your changes that you want to merge.
+- Summarize all the changes you made and also use this space to indicate any specific feedback you are looking for. 
 - Click "Create pull request".
 ## How to review and accept a pull request
 https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/reviewing-changes-in-pull-requests/reviewing-proposed-changes-in-a-pull-request  
