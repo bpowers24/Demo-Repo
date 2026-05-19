@@ -1,11 +1,23 @@
 
 # GitHub Resources
+## How to set up Git and GitHub on your computer
+1. Create a [GitHub account](https://docs.github.com/en/get-started/start-your-journey/creating-an-account-on-github). 
+2. Log into [GitHub](https://github.com). 
+3. Install Git with the command line. For Windows or Mac: 
+	- Go to https://git-scm.com/downloads. Download and run install and accept defaults. 
+	- Verify install with terminal (Mac) or Git Bash (Windows): Run `git --verison`. It should show the version number. 
+4. Configure Git identify with terminal (Mac) or Git Bash (Windows). 
+	- Run `git config --global user.name “your name”`.
+ 	- Run `git config --global user.email “your email@email.com”`. 
+	- Verify with `git config --list`. You should see your name and email. 
+9. Install [GitHub Desktop](https://desktop.github.com). 
+10. Open GitHub Desktop and sign into with your GitHub account. Configure GitHub Desktop in Settings. Confirm your name and email is correct.
 ## How to remove a repository from your local computer
 This removes the cloned copy of your repository on your local computer. The original repository will still remain on GitHub. 
 - Locate your repository in your Finder/File Explorer.
 - If there is a `.gitignore` file, open it. This file lists files that may be on your local computer and not saved elsewhere. If you find files listed in the `.gitignore` that you want to keep, move them somewhere else on your computer.
 - Highlight and delete the parent folder. This will remove the repository folder and all files within it.
-- To reclone return to GitHub web broswer and clone as if the repo was new. 
+- To reclone return to GitHub web broswer and clone as if the repo was new.
 ## How to clone
 https://docs.github.com/en/desktop/adding-and-cloning-repositories/cloning-a-repository-from-github-to-github-desktop
 - Go to your repo on GitHub web browser.
