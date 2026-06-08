@@ -32,7 +32,8 @@ https://docs.github.com/en/desktop/making-changes-in-a-branch/committing-and-rev
 - Make the changes to your files and scripts. 
 - Return to GitHub Desktop. 
 - Click `Fetch` again to pull in any changes that may have been made while you were working on your files. 
-- Write your commit message in the `Summary` box and add any additional text to the `Description`. If you only want to commit a portion of your changes, use the check boxes to select the files/lines you want to commit. 
+- Write your commit message in the `Summary` box and add any additional text to the `Description`. If you only want to commit a portion of your changes, use the check boxes to select the files/lines you want to commit.
+	- Writing Commit Messages: The _Summary_ describes what you changed. This is written in the imperitive mood (e.g., "Add column to data" not "Add**ed** column to data"); write it so it can fill in this blank: "If applied, this commit will ...[your commit summary here]". The _Description_ explains why you made the change or how you changed it. 
 - Click the blue `Commit` button in the bottom left corner. This will commit your changes to the git system on your local machine. 
 - Click `Push origin` (the button that usually says `Fetch`) to push your changes to GitHub so everyone has access to them.
 ## How to create a new branch
