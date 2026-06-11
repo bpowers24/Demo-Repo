@@ -1,8 +1,8 @@
+## Ryder Runkle
+## June, 9th, 2026
+
 library("tidyverse")
 library("testthat")
-read_csv("data/penguin_species.csv")
-read_csv("data/penguin_measurements.csv")
-
 penguin_species = read_csv("data/penguin_species.csv")
 penguin_measurements = read_csv("data/penguin_measurements.csv")
 
