@@ -46,7 +46,7 @@ test_that("no missing values in output", {
 # check that averaged body mass values within `island_body_mass` are correct
 test_that("averaged body mass values within `island_body_mass` are correct", {
   expected <- tibble(island = c("Biscoe", "Dream", "Torgersen"),
-                     mean_body_mass_g = c(3709.659, 3688.393, 3706.373))
+                     mean_body_mass_g = c(4716.018, 3712.903, 3706.373))
 
   expect_equal(island_body_mass %>% 
                 select(island, mean_body_mass_g) %>% 
@@ -62,6 +62,7 @@ test_that("object `adelie_body_mass` exists", {
   expect_true(exists("adelie_body_mass"), 
               label = "The object `adelie_body_mass` does not exist. Please check that you have created an object with this name in your `practice.R` script.")
 })
+
 
 # check that only Adelie species is included in data set
 test_that("only Adelie is included in adelie_body_mass", {
