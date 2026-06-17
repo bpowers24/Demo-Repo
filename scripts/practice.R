@@ -1,4 +1,4 @@
-# practice-test.R 
+# practice.R 
 # Author: Ryder Runkle
 # Date Created: 2026-06-16
 # Date Updates: 2026-06-16
@@ -18,4 +18,11 @@ joined_data = left_join(penguin_species, penguin_measurements, by = "species_id"
 island_body_mass = group_by(joined_data, island)
 island_body_mass = summarize(island_body_mass, mean_body_mass_g = mean(body_mass_g, na.rm = TRUE), .groups = "drop")
 print(island_body_mass, digits = 16)
+
+# Create data frame that only has Adelie
+adelie_body_mass = filter(joined_data, common_name == "Adelie") %>%
+  group_by(common_name) %>%
+  summarize(mean_body_mass_g = mean(body_mass_g, na.rm = TRUE), .groups = "drop")
+print(adelie_body_mass, digits. = 16)
+
 
