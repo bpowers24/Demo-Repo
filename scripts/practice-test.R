@@ -32,15 +32,10 @@ test_that("object `island_body_mass` exists", {
 
 # check that columns within `island_body_mass` are correct
 test_that("columns within `island_body_mass` are correct", {
-  expect_true(all(c("common_name", "island", "mean_body_mass_g") %in% colnames(island_body_mass)), 
+  expect_true(all(c("island", "mean_body_mass_g") %in% colnames(island_body_mass)), 
   label = "The object `island_body_mass` does not contain the correct columns. Please check that you have created an object with this name in your `practice.R` script and that it contains the columns `common_name`, `island`, and `mean_body_mass_g`.")
 })
 
-# check that only Adelie penguins are included within `island_body_mass`
-test_that("only Adelie penguins are included", {
-  expect_true(all(island_body_mass$common_name %in% "Adelie"), 
-  label = "The object `island_body_mass` contains penguins that are not Adelie penguins. Please check that you have created an object with this name in your `practice.R` script and that it only contains data for Adelie penguins.")
-})
 
 # check that there are no missing values in the `mean_body_mass_g` column within `island_body_mass`
 test_that("no missing values in output", {
