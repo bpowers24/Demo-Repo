@@ -1,11 +1,10 @@
 # practice.R 
 # Author: Ryder Runkle
 # Date Created: 2026-06-16
-# Date Updates: 2026-06-16
+# Date Updates: 2026-06-21
 
 # Load libraries necessary for the tasks
 library("tidyverse")
-library("testthat")
 
 # Create Data frames so to make csv data usable in R.
 penguin_species = read_csv("data/penguin_species.csv")
