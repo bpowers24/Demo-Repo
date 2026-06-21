@@ -1,7 +1,7 @@
 # practice-test.R 
-# Author: Bibi Powers-McCormack
+# Author: Ryder Runkle
 # Date Created: 2026-06-01
-# Date Updated: 2026-06-01
+# Date Updated: 2026-06-16
 
 # Objective: This script is meant to confirm the results created by students. 
 # Inputs: 
