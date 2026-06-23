@@ -30,5 +30,6 @@ flipperplot = ggplot(data = penguins, mapping = aes(x = sex, y = flipper_length_
   geom_point(size = 2) +
   scale_color_manual(values = c("female" = "pink", "male" = "blue")) +
   facet_wrap(~island) +
+  labs(x = "Sex", y = "Flipper Length",
        title = "Flipper Length by Sex by Island")
 
