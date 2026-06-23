@@ -12,3 +12,8 @@ library("dplyr")
 penguins = read.csv("data/penguin_measurements.csv") %>%
   left_join(read.csv("data/penguin_species.csv"), by = "species_id")
 
+# Create Point Plot
+ggplot(data = penguins, mapping = aes(x = bill_length_mm, y = body_mass_g)) +
+  geom_point(size = 2, color = "red") +
+  labs( x = "Bill Length (mm)", y = "Body Mass (g)",
+       title = "Body Mass Based on Bill Length")
