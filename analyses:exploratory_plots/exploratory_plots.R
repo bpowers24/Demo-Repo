@@ -19,8 +19,16 @@ pointplot = ggplot(data = penguins, mapping = aes(x = bill_length_mm, y = body_m
        title = "Body Mass Based on Bill Length")
 
 # Create Bar Plot
-barplot = ggplot(data = penguins, mapping = aes (x = island, fill = common_name)) +
+barplot = ggplot(data = penguins, mapping = aes(x = island, fill = common_name)) +
   geom_bar() +
   scale_fill_manual(values = c("red", "yellow", "blue")) + 
   labs(x = "Name of Island", y = "Species",
        title = "Species by Island")
+
+# Create Plot using `facet_wrap`
+flipperplot = ggplot(data = penguins, mapping = aes(x = sex, y = flipper_length_mm, color = sex)) +
+  geom_point(size = 2) +
+  scale_color_manual(values = c("female" = "pink", "male" = "blue")) +
+  facet_wrap(~island) +
+       title = "Flipper Length by Sex by Island")
+
