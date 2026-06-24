@@ -33,3 +33,10 @@ flipperplot = ggplot(data = penguins, mapping = aes(x = sex, y = flipper_length_
   labs(x = "Sex", y = "Flipper Length",
        title = "Flipper Length by Sex by Island")
 
+# Explore other Geom Plots
+bodymassplot = ggplot(data = penguins, mapping = aes(x = common_name, y = body_mass_g, fill = common_name)) +
+  geom_violin() +
+  scale_fill_manual(values = c("red", "yellow", "blue")) + 
+  labs(x = "Species", y = "Body Mass (g)",
+       title = "Body Mass Distribution by Species")
+
