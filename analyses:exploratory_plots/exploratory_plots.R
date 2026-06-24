@@ -41,5 +41,6 @@ bodymassplot = ggplot(data = penguins, mapping = aes(x = common_name, y = body_m
        title = "Body Mass Distribution by Species")
 
 # Use Patch work to combine two plots
-patchplot = barplot + bodymassplot & 
+patchplot = barplot + bodymassplot +
+  plot_annotation(title = "Penguin Species Overview") &
   theme_minimal()
