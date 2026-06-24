@@ -44,3 +44,11 @@ bodymassplot = ggplot(data = penguins, mapping = aes(x = common_name, y = body_m
 patchplot = barplot + bodymassplot +
   plot_annotation(title = "Penguin Species Overview") &
   theme_minimal()
+
+# Save the plots
+dir.create("analyses/exploratory_plots/figs", recursive = TRUE)
+ggsave("analyses/exploratory_plots/figs/pointplot.png", plot = pointplot, width = 7, height = 5)
+ggsave("analyses/exploratory_plots/figs/barplot.png", plot = barplot, width = 7, height = 5)
+ggsave("analyses/exploratory_plots/figs/flipperplot.png", plot = flipperplot, width = 9, height = 5)
+ggsave("analyses/exploratory_plots/figs/bodymassplot.png", plot = bodymassplot, width = 7, height = 5)
+ggsave("analyses/exploratory_plots/figs/patchplot.png", plot = patchplot, width = 12, height = 6)
