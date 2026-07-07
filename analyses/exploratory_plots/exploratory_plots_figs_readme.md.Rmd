@@ -1,0 +1,80 @@
+---
+title: "exploratory_plots_figs_readme"
+author: "Ryder Runkle"
+date: "2026-06-24"
+output: pdf_document
+---
+
+All figures were created in R using ggplot2 and patchwork. Data was loaded from two CSVs and joined by species_id before plotting.
+
+```{r setup, include=FALSE, warning=FALSE}
+library("ggplot2")
+library("patchwork")
+library("dplyr")
+penguins = read.csv("~/Desktop/Ryder Runkle/UW/Lab/GitHub/Demo-Repo.2/data/penguin_measurements.csv") %>%
+  left_join(read.csv("~/Desktop/Ryder Runkle/UW/Lab/GitHub/Demo-Repo.2/data/penguin_species.csv"), by = "species_id") %>%
+  filter(!is.na(bill_length_mm), !is.na(body_mass_g), !is.na(flipper_length_mm), !is.na(sex))
+```
+
+## Point Plot
+
+```{r point-plot}
+pointplot = ggplot(data = penguins, mapping = aes(x = bill_length_mm, y = body_mass_g)) +
+  geom_point(size = 2, color = "red") +
+  labs(x = "Bill Length (mm)", y = "Body Mass (g)",
+       title = "Body Mass Based on Bill Length")
+pointplot
+```
+
+This scatter plot shows the relationship between bill length and body mass across all penguins. It appears that there is a postive correletion between increasing bill length and body mass.
+
+## Bar Plot
+
+```{r bar-plot}
+barplot = ggplot(data = penguins, mapping = aes(x = island, fill = common_name)) +
+  geom_bar() +
+  scale_fill_manual(values = c("red", "yellow", "blue")) +
+  labs(x = "Name of Island", y = "Species",
+       title = "Species by Island")
+barplot
+```
+
+This bar chart shows the number of each penguin species found on each islands, Biscoem, Dream, and Torgersen. Adelie penguins are found on all three islands, while Chinstrap are only found on Dream and Gentoo are only found on Torgersen.
+
+## Flipper Plot
+
+```{r flipper-plot}
+flipperplot = ggplot(data = penguins, mapping = aes(x = sex, y = flipper_length_mm, color = sex)) +
+  geom_point(size = 2) +
+  scale_color_manual(values = c("female" = "pink", "male" = "blue")) +
+  facet_wrap(~island) +
+  labs(x = "Sex", y = "Flipper Length",
+       title = "Flipper Length by Sex by Island")
+flipperplot
+```
+
+This plot shows flipper length for males and females broken down by all three islands. On average males tend to have slightly large flipper length than females. Penguins on Biscoe islands tend to have larger flippers, while Dream and Torgersen have smaller and about the same size flippers. 
+
+## Body Mass Distribution
+
+```{r body-mass-plot}
+bodymassplot = ggplot(data = penguins, mapping = aes(x = common_name, y = body_mass_g, fill = common_name)) +
+  geom_violin() +
+  scale_fill_manual(values = c("red", "yellow", "blue")) +
+  labs(x = "Species", y = "Body Mass (g)",
+       title = "Body Mass Distribution by Species")
+bodymassplot
+```
+
+This violin plot shows the distribution of body mass for each penguin species. Gentoo penguins have a noticeablely higher body mass than Adelie and Chinstrap penguins, but also have a bigger range in body masses. 
+
+## Patchwork Plot
+
+```{r patchwork-plot, fig.width=8, fig.height=4}
+patchplot = barplot + bodymassplot +
+  plot_annotation(title = "Pwenguin Species Overview") &
+  theme_minimal()
+patchplot
+```
+
+This combined figure uses patchwork to display the bar plot on the left and body mass violin plot on the left, side by side. This side by side gives a full species overview and breakdown of each species and shows how many are on each island and what species weigh the most. 
